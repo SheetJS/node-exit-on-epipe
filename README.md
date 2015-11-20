@@ -76,7 +76,7 @@ If the `stream` parameter is not specified, no action will be taken
 ## Notes
 
 The script will not perform any action if `process` or `process.stdout` are not
-available.  It should be safe to use in a web page.
+available.  It is safe to use in a web page.
 
 ## License
 
