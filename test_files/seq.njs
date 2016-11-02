@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-/* exit-on-epipe.js (C) 2015 SheetJS -- http://sheetjs.com */
+/* exit-on-epipe.js (C) 2015-present SheetJS -- http://sheetjs.com */
 /* usage: node seq.njs <last> [test]
    print sequences of numbers
    if test is specified, require the exit-to-epipe module

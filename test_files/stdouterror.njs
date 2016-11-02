@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-/* exit-on-epipe.js (C) 2015 SheetJS -- http://sheetjs.com */
+/* exit-on-epipe.js (C) 2015-present SheetJS -- http://sheetjs.com */
 /* usage: node stdouterr.njs [multi|multi2] [test]
    if test is specified, require the exit-to-epipe module
    if multi is specified, attach an error handler that counts invocations
@@ -16,5 +16,5 @@ process.stdout.emit('error', new Error("WTF"));
 if(argv[0] !== "multi2") process.exit();
 
 process.stdout.removeListener('error', noop);
-var x = new Error("SIGPIPE"); x.errno = "EPIPE";
+var x = new Error("SIGPIPE"); x.errno = 32;
 process.stdout.emit('error', x);

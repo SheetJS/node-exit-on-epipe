@@ -11,7 +11,7 @@ for(var i = 0; i < 10; ++i) console.log(i)
 
 NodeJS will print an error message if the output is truncated:
 
-```
+```bash
 $ cat t.js
 for(var i = 0; i < 10; ++i) console.log(i)
 $ node t.js  | head -n 1
@@ -28,7 +28,7 @@ Error: write EPIPE
 
 The process will cleanly exit if you require the module:
 
-```
+```bash
 $ cat t.js
 require("exit-on-epipe");
 for(var i = 0; i < 10; ++i) console.log(i)
@@ -40,7 +40,9 @@ $ node t.js  | head -n 1
 
 With [npm](https://www.npmjs.org/package/exit-on-epipe):
 
-    $ npm install exit-on-epipe
+```bash
+$ npm install exit-on-epipe
+```
 
 ## Usage
 
@@ -54,9 +56,9 @@ require('exit-on-epipe');
 For more advanced situations (e.g. handing other streams), call the module:
 
 ```js
-var EOE = require('exit-on-epipe');
-EOE(my_stream);             // will exit process on an EPIPE error on my_stream
-EOE(my_stream, my_handler); // will call my_handler() instead of process.exit
+var eoepipe = require('exit-on-epipe');
+eoepipe(stream);            // will exit process on an EPIPE error on stream
+eoepipe(stream, handler);   // will call handler() instead of process.exit
 ```
 
 ## Interface
@@ -65,7 +67,7 @@ The module exports a single function (exposed as the variable `eoepipe`).
 
 `eoepipe(stream, bail)` will attach an error handler to `stream` which will:
 
-- call the `bail` function if the error `.code` or `.errno` is `"EPIPE"`
+- call the `bail` function if the error `.code` is `"EPIPE"` or `.errno` is `32`
 - defer to the default behavior if there are no other error handlers
 - noop if the error is not `EPIPE` and if there are other error handlers
 

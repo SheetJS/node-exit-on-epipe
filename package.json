@@ -1,6 +1,6 @@
 {
 	"name": "exit-on-epipe",
-	"version": "0.0.1",
+	"version": "0.1.0",
 	"author": "sheetjs",
 	"description": "Cleanly exit process on EPIPE",
 	"keywords": [ "epipe", "pipe", "error", "exit" ],
@@ -14,6 +14,7 @@
 	"scripts": {
 		"test": "make test"
 	},
+	"files": ["exit-on-epipe.js", "LICENSE", "README.md"],
 	"bugs": { "url": "https://github.com/SheetJS/node-exit-on-epipe/issues" },
 	"license": "Apache-2.0",
 	"engines": { "node": ">=0.8" }
