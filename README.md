@@ -89,4 +89,12 @@ granted by the Apache 2.0 license are reserved by the Original Author.
 
 [![Build Status](https://travis-ci.org/SheetJS/node-exit-on-epipe.svg?branch=master)](https://travis-ci.org/SheetJS/node-exit-on-epipe)
 
+[![npm license](https://img.shields.io/npm/l/express.svg)](https://npmjs.org/package/exit-on-epipe)
+
+[![NPM Downloads](https://img.shields.io/npm/dt/exit-on-epipe.svg)](https://npmjs.org/package/exit-on-epipe)
+
+[![Dependencies Status](https://david-dm.org/sheetjs/node-exit-on-epipe/status.svg)](https://david-dm.org/sheetjs/node-exit-on-epipe)
+
+[![ghit.me](https://ghit.me/badge.svg?repo=sheetjs/node-exit-on-epipe)](https://ghit.me/repo/sheetjs/node-exit-on-epipe)
+
 [![Analytics](https://ga-beacon.appspot.com/UA-36810333-1/SheetJS/node-exit-on-epipe?pixel)](https://github.com/SheetJS/node-exit-on-epipe)

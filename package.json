@@ -1,6 +1,6 @@
 {
 	"name": "exit-on-epipe",
-	"version": "0.1.0",
+	"version": "1.0.0",
 	"author": "sheetjs",
 	"description": "Cleanly exit process on EPIPE",
 	"keywords": [ "epipe", "pipe", "error", "exit" ],
