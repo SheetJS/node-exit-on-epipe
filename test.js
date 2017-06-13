@@ -52,8 +52,7 @@ function doit(test) {
 			passopts.msg = "should not throw with module";
 			nthrow(testcmd, passopts);
 		}
-		
-		if(test.pass) {
+		if(test.pass || parseFloat(process.version.slice(1)) >= test.fixedin) {
 			passopts.msg = "should not throw normally";
 			nthrow(basecmd, passopts);
 		} else {

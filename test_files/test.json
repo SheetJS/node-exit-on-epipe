@@ -9,7 +9,8 @@
 		"desc":   "correct handling of closed stdout pipe",
 		"cmd":    "seq.njs 10000 ௳",
 		"errmsg": "EPIPE",
-		"output": "0\n1\n2\n3\n4\n5\n6\n7\n8\n9\n"
+		"output": "0\n1\n2\n3\n4\n5\n6\n7\n8\n9\n",
+		"fixedin": 8
 	},
 	{
 		"desc":   "process errors are still passed through",
