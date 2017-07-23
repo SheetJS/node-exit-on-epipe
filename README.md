@@ -2,6 +2,9 @@
 
 Cleanly exit on pipe errors in NodeJS scripts.
 
+NOTE: The underlying problem was addressed in 8.x NodeJS versions but the fix
+was not backported to 6.x and other versions of NodeJS.
+
 These errors are common in pipelines that involve NodeJS scripts. For example,
 take a simple script that prints out 10 lines:
 
@@ -14,16 +17,17 @@ NodeJS will print an error message if the output is truncated:
 ```bash
 $ cat t.js
 for(var i = 0; i < 10; ++i) console.log(i)
+$ node --version
+v6.11.1
 $ node t.js  | head -n 1
 0
-events.js:141
+events.js:160
       throw er; // Unhandled 'error' event
       ^
 
 Error: write EPIPE
-    at Object.exports._errnoException (util.js:856:11)
-    at exports._exceptionWithHostPort (util.js:879:20)
-    at WriteWrap.afterWrite (net.js:763:14)
+    at exports._errnoException (util.js:1018:11)
+    at WriteWrap.afterWrite (net.js:800:14)
 ```
 
 The process will cleanly exit if you require the module:

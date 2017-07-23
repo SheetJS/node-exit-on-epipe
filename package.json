@@ -1,6 +1,6 @@
 {
 	"name": "exit-on-epipe",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"author": "sheetjs",
 	"description": "Cleanly exit process on EPIPE",
 	"keywords": [ "epipe", "pipe", "error", "exit" ],
@@ -8,7 +8,7 @@
 	"dependencies": {
 	},
 	"devDependencies": {
-		"mocha":""
+		"mocha":"~2.5.3"
 	},
 	"repository": { "type":"git", "url":"git://github.com/SheetJS/node-exit-on-epipe.git" },
 	"scripts": {
