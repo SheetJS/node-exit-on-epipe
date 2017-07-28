@@ -89,9 +89,13 @@ available.  It is safe to use in a web page.
 Please consult the attached LICENSE file for details.  All rights not explicitly
 granted by the Apache 2.0 license are reserved by the Original Author.
 
+
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bhttps%3A%2F%2Fgithub.com%2FSheetJS%2Fnode-exit-on-epipe.svg?type=large)](https://app.fossa.io/projects/git%2Bhttps%3A%2F%2Fgithub.com%2FSheetJS%2Fnode-exit-on-epipe?ref=badge_large)
+
 ## Badges
 
 [![Build Status](https://travis-ci.org/SheetJS/node-exit-on-epipe.svg?branch=master)](https://travis-ci.org/SheetJS/node-exit-on-epipe)
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bhttps%3A%2F%2Fgithub.com%2FSheetJS%2Fnode-exit-on-epipe.svg?type=shield)](https://app.fossa.io/projects/git%2Bhttps%3A%2F%2Fgithub.com%2FSheetJS%2Fnode-exit-on-epipe?ref=badge_shield)
 
 [![npm license](https://img.shields.io/npm/l/exit-on-epipe.svg)](https://npmjs.org/package/exit-on-epipe)
 
